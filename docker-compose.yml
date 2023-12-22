@@ -1,6 +1,6 @@
 services:
-  random-info-saver:
-    container_name: random-info-saver
+  random-persister:
+    container_name: random-persister
     build:
       context: .
     command: npx ts-node index.ts
