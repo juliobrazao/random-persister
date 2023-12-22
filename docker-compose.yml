@@ -1,0 +1,11 @@
+services:
+  random-info-saver:
+    container_name: random-info-saver
+    build:
+      context: .
+    command: npx ts-node index.ts
+    volumes:
+      - .:/src
+      - /src/node_modules
+    ports:
+      - 8083:3004
